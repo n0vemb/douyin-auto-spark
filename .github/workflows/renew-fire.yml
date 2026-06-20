@@ -3,7 +3,8 @@ name: 🚀 续一次火
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *" # UTC 时间，北京时间在这基础上 +8
+    - cron: "0 1 * * *"
+      timezone: "Asia/Shanghai"
 
 jobs:
   run:
